@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.pdf-viewer {
+  @apply bg-white rounded-lg shadow-lg p-8;
+}
+
+.search-result-item {
+  @apply p-4 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors duration-200;
+}
+
+.text-highlight {
+  background-color: rgba(255, 255, 0, 0.4) !important;
+  border-radius: 2px;
+}
+
+.term-highlight {
+  background-color: black !important;
+  color: white !important;
+  border-radius: 2px;
+}
+
+.pdf-container .react-pdf__Page__textContent {
+  pointer-events: none;
+}
+
+/* Improved scrollbar styling */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 #F1F5F9;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F1F5F9;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #CBD5E1;
+  border-radius: 3px;
+}
+
+/* Loading animation */
+.loading-spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200;
+  border-top-color: #3B82F6;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors duration-200;
+}
+
+.btn-danger {
+  @apply bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors duration-200;
+}
+
+/* Input styles */
+.input-primary {
+  @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors duration-200;
+}
+
+/* Card styles */
+.card {
+  @apply bg-white rounded-lg shadow-md;
+}
+
+/* Summary box */
+.summary-box {
+  @apply bg-blue-50 rounded-lg p-4 mb-6;
+}
+
+/* Navigation controls */
+.nav-button {
+  @apply p-2 rounded-full hover:bg-gray-100 disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200;
+}
+
+/* PDF container */
+.pdf-wrapper {
+  @apply bg-gray-50 rounded-lg p-4;
+}
+
+/* Drag and drop styles */
+.drag-active {
+  @apply ring-2 ring-primary-500 bg-primary-50;
+}
