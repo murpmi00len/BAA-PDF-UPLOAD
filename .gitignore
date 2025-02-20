@@ -1,16 +1,5 @@
-node_modules
-dist
-env
-env.*
-!.env.example
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Ignore system files
+AppData/
+*.jtx
+*.log
+*.bak
